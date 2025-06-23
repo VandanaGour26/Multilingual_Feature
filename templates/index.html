@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{labels.home_title}}</title>
+    <link rel="stylesheet" href= "{% static 'style.css' %}">
+    <!--<title>Agriguard - Tomato Disease Detection</title>
+    <link rel="stylesheet" href="/static/style.css">-->
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo">Agriguard</h1>
+        <ul class="nav-links">
+
+            <!--<li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#upload">Upload Image</a></li>-->
+
+            <li><a href="#home">{{ labels.nav_home }}</a></li>
+            <li><a href="#about">{{ labels.nav_about }}</a></li>
+            <li><a href="#upload">{{ labels.nav_upload }}</a></li>
+
+           
+            
+         <!--  <li><a href="{% url 'register' %}">Register</a></li>-->
+            {% if user.is_authenticated %}
+                <li><a href="{% url 'logout_user' %}">{{ labels.nav_logout }}</a></li>
+            {% else %}
+                <li><a href="{% url 'register' %}">{{ labels.nav_register }}</a></li>
+                <li><a href="{% url 'login_user' %}">{{ labels.nav_login }}</a></li>
+               
+                 
+            {% endif %}
+
+            <li>
+                <form method="POST" action="{% url 'set_language' %}" style="display: inline;">
+                    {% csrf_token %}
+                    <select name="language" onchange="this.form.submit()">
+                        <option value="en" {% if request.session.language == 'en' %}selected{% endif %}>English</option>
+                        <option value="hi" {% if request.session.language == 'hi' %}selected{% endif %}>हिंदी</option>
+                        <option value="mr" {% if request.session.language == 'mr' %}selected{% endif %}>मराठी</option>
+                        <option value="te" {% if request.session.language == 'te' %}selected{% endif %}>తెలుగు</option>
+                        <option value="gu" {% if request.session.language == 'gu' %}selected{% endif %}>ગુજરાતી</option>
+                    
+                    </select>
+                </form>
+            </li>
+
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="container">
+            <div class="content">
+                <!--<h1>Welcome to Agriguard!</h1>
+                <h3>Healthy Crops, Better Yields – Diagnose Tomato Diseases in a Click!</h3>
+                <p>Simply upload an image of your tomato plant, and let Agriguard provide you with insights on possible diseases and remedies.</p>-->
+                
+                <h1>{{ labels.home_title }}</h1>
+                <h3>{{ labels.home_subtitle }}</h3>
+                <p>{{ labels.home_desc }}</p>
+
+            </div>
+            <div class="image-container">
+                <img src="/static/download (1).jpeg" alt="Tomato Plant">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container1">
+            <!--<h1>ABOUT AGRIGUARD</h1>
+            <p class="plant">Agriguard is an advanced crop disease detection platform designed to help farmers and researchers identify and manage plant diseases efficiently. Our system utilizes AI-powered analysis to detect diseases like Early Blight, Late Blight, and Bacterial Blight in tomato plants.</p>
+            <h2>Diseases We Detect</h2>-->
+
+            <h1>{{ labels.about_title }}</h1>
+            <p class="plant">{{ labels.about_desc }}</p>
+            <h2>{{ labels.diseases_title }}</h2>
+
+            <div class="card">
+                <div class="box">
+                    <img src="/static/earlyb.jpeg" alt="Early Blight">
+                    <div class="box-content">
+                        <!--<h3>Early Blight</h3>
+                        <p>Identified by brown spots with concentric rings, this disease weakens plants by causing premature leaf drop, reducing fruit production.</p>-->
+
+                        <h3>{{ labels.early_blight }}</h3>
+                        <p>{{ labels.early_blight_desc }}</p>
+
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="/static/lateb.jpeg" alt="Late Blight">
+                    <div class="box-content">
+                        <!--<h3>Late Blight</h3>
+                        <p>A fast-spreading fungal disease that creates dark, water-soaked lesions on leaves.</p>-->
+
+                        <h3>{{ labels.late_blight }}</h3>
+                        <p>{{ labels.late_blight_desc }}</p>
+
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="/static/powdery.jpeg" alt="Bacterial Spot">
+                    <div class="box-content">
+                        <!--<h3>Bacterial Spot</h3>
+                        <p>Causes small, dark, water-soaked spots that lead to yellowing and eventual leaf drop.</p>-->
+
+                        <h3>{{ labels.bacterial_spot }}</h3>
+                        <p>{{ labels.bacterial_spot_desc }}</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section id="upload">
+        <div class="container2">
+            <!--<h2 class="upload-title">UPLOAD IMAGE</h2>
+            <p class="upload-content">Choose an option below to upload an image.</p>-->
+
+            <h2 class="upload-title">{{ labels.upload_title }}</h2>
+            <p class="upload-content">{{ labels.upload_desc }}</p>
+
+            {% if messages %}
+                {% for message in messages %}
+                    <p style="color: red; text-align: center;">{{ message }}</p>
+                {% endfor %}
+            {% endif %}
+
+            {% if user.is_authenticated %}
+                <form method="POST" enctype="multipart/form-data" action="">
+                    {% csrf_token %}
+                    <input type="file" name="image" accept="image/*" required><br><br>
+                    <button type="submit" class="upload-btn">{{ labels.uplode_button }}</button>
+                </form>
+            {% else %}
+                <p style="text-align: center; color: red; font-weight: bold;">
+                    <!--Please <a href="{% url 'login_user' %}">Login</a> or 
+                    <a href="{% url 'register' %}">Register</a> to upload an image.--->
+                    
+                    {{ labels.login_prompt }}
+                    <a href="{% url 'login_user' %}">{{ labels.nav_login }}</a> {{ labels.or }}
+                    <a href="{% url 'register' %}">{{ labels.nav_register }}</a>
+
+                </p>
+            {% endif %}
+        </div>
+    </section>
+
+    <!-- Result Section (Optional) -->
+    {% if result %}
+        <section id="result" style="text-align: center; padding: 50px;">
+            <!--<h2>Detection Result</h2>
+            <p>{{ result }}</p>-->
+
+            <h2>{{ labels.result_title }}</h2>
+            <p id="diseaseResult">{{ result }}</p>
+
+
+        </section>
+    {% endif %}
+
+</body>
+</html>

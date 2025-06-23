@@ -1,0 +1,181 @@
+{
+  "en": {
+    "home_title": "Welcome to Agriguard!",
+    "home_subtitle": "Healthy Crops, Better Yields – Diagnose Tomato Diseases in a Click!",
+    "home_desc": "Simply upload an image of your tomato plant, and let Agriguard provide you with insights on possible diseases and remedies.",
+    
+    "about_title": "ABOUT AGRIGUARD",
+    "about_desc": "Agriguard is an advanced crop disease detection platform designed to help farmers and researchers identify and manage plant diseases efficiently. Our system utilizes AI-powered analysis to detect diseases like Early Blight, Late Blight, and Bacterial Blight in tomato plants.",
+    "diseases_title": "Diseases We Detect",
+    
+    "early_blight": "Early Blight",
+    "early_blight_desc": "Identified by brown spots with concentric rings, this disease weakens plants by causing premature leaf drop, reducing fruit production.",
+    
+    "late_blight": "Late Blight",
+    "late_blight_desc": "A fast-spreading fungal disease that creates dark, water-soaked lesions on leaves.",
+    
+    "bacterial_spot": "Bacterial Spot",
+    "bacterial_spot_desc": "Causes small, dark, water-soaked spots that lead to yellowing and eventual leaf drop.",
+    
+    "upload_title": "UPLOAD IMAGE",
+    "upload_desc": "Choose an option below to upload an image.",
+    "predict_button": "Upload Image",
+    
+    "login_prompt": "Please",
+    "or": "or",
+    
+    "result_title": "Detection Result",
+    
+    "nav_home": "Home",
+    "nav_about": "About",
+    "nav_upload": "Upload Image",
+    "nav_register": "Register",
+    "nav_login": "Login",
+    "nav_logout": "Logout"
+  },
+
+  "hi": {
+    "home_title": "एग्रीगार्ड में आपका स्वागत है!",
+    "home_subtitle": "स्वस्थ फसलें, बेहतर उपज – टमाटर की बीमारियों का तुरंत निदान करें!",
+    "home_desc": "बस अपने टमाटर के पौधे की एक तस्वीर अपलोड करें, और एग्रीगार्ड आपको संभावित बीमारियों और उपचारों की जानकारी देगा।",
+    
+    "about_title": "एग्रीगार्ड के बारे में",
+    "about_desc": "एग्रीगार्ड एक उन्नत फसल रोग पहचान मंच है जिसे किसानों और शोधकर्ताओं की सहायता के लिए डिज़ाइन किया गया है ताकि वे पौधों की बीमारियों की पहचान और प्रबंधन प्रभावी ढंग से कर सकें। हमारा सिस्टम टमाटर के पौधों में अर्ली ब्लाइट, लेट ब्लाइट और बैक्टीरियल स्पॉट जैसी बीमारियों का पता लगाने के लिए एआई का उपयोग करता है।",
+    "diseases_title": "हम जिन बीमारियों का पता लगाते हैं",
+    
+    "early_blight": "अर्ली ब्लाइट",
+    "early_blight_desc": "केंद्रित वलयों वाले भूरे धब्बों से पहचाना जाता है, यह बीमारी पत्तियों को गिरा देती है जिससे फल उत्पादन कम हो जाता है।",
+    
+    "late_blight": "लेट ब्लाइट",
+    "late_blight_desc": "यह एक तेजी से फैलने वाली फंगल बीमारी है जो पत्तियों पर काले और पानी जैसे धब्बे बनाती है।",
+    
+    "bacterial_spot": "बैक्टीरियल स्पॉट",
+    "bacterial_spot_desc": "यह छोटे, गहरे रंग के पानी जैसे धब्बे बनाता है जो पीलापन और पत्तियों के झड़ने का कारण बनते हैं।",
+    
+    "upload_title": "छवि अपलोड करें",
+    "upload_desc": "नीचे दिए गए विकल्प का उपयोग करके छवि अपलोड करें।",
+    "predict_button": "छवि अपलोड करें",
+    
+    "login_prompt": "कृपया",
+    "or": "या",
+    
+    "result_title": "पता लगाने का परिणाम",
+    
+    "nav_home": "होम",
+    "nav_about": "अबाउट",
+    "nav_upload": "छवि अपलोड करें",
+    "nav_register": "रजिस्टर",
+    "nav_login": "लॉगिन",
+    "nav_logout": "लॉगआउट"
+  },
+ 
+ 
+
+ 
+
+  "mr": {
+    "home_title": "एग्रीगार्डमध्ये आपलं स्वागत आहे!",
+    "home_subtitle": "तंदुरुस्त पीकं, उत्तम उत्पादन - टमाटराच्या रोगांचा त्वरित शोध करा!",
+    "home_desc": "फक्त तुमच्या टमाटराच्या झाडाची एक छायाचित्र अपलोड करा आणि एग्रीगार्ड तुम्हाला संभाव्य रोग आणि उपचारांच्या माहिती देईल.",
+    
+    "about_title": "एग्रीगार्डविषयी",
+    "about_desc": "एग्रीगार्ड एक अत्याधुनिक पीक रोग ओळखण्याचं प्लॅटफॉर्म आहे, जे शेतकऱ्यांना आणि संशोधकांना प्रभावीपणे पीक रोग ओळखण्याचं आणि व्यवस्थापित करण्याचं सहाय्य प्रदान करतो. आमचं प्रणाली ए.आय. आधारित विश्लेषणाचा उपयोग करते जे टमाटराच्या झाडांमध्ये अर्ली ब्लाइट, लेट ब्लाइट, आणि बॅक्टेरियल स्पॉट यांसारख्या रोगांचा शोध घेते.",
+    "diseases_title": "आम्ही शोधलेल्या रोगं",
+    
+    "early_blight": "अर्ली ब्लाइट",
+    "early_blight_desc": "केन्द्रीय वलयांसह तपकिरी धक्के, हे रोग पिकांना पिळवटून टाकतो आणि पानांच्या गडगडांमुळे फळ उत्पादन कमी करतो.",
+    
+    "late_blight": "लेट ब्लाइट",
+    "late_blight_desc": "तंतूंच्या स्प्रेडिंग रोगामुळे पानांवर गडद, पाणी-जाणारे धक्के येतात.",
+    
+    "bacterial_spot": "बॅक्टेरियल स्पॉट",
+    "bacterial_spot_desc": "छोट्या, गडद पाणी-जाणार्या धक्क्यांमुळे पानाच्या पिवळ्यामुळे आणि अखेरीस पानांच्या गडगडांमुळे होतो.",
+    
+    "upload_title": "छायाचित्र अपलोड करा",
+    "upload_desc": "खालील पर्यायांपैकी एक वापरून छायाचित्र अपलोड करा.",
+    "predict_button": "छायाचित्र अपलोड करा",
+    
+    "login_prompt": "कृपया",
+    "or": "किंवा",
+    
+    "result_title": "तपासणीचा परिणाम",
+    
+    "nav_home": "होम",
+    "nav_about": "बद्दल",
+    "nav_upload": "छायाचित्र अपलोड करा",
+    "nav_register": "नोंदणी करा",
+    "nav_login": "लॉगिन",
+    "nav_logout": "लॉगआउट"
+  },
+
+  "te": {
+    "home_title": "ఆగ్రిగార్డ్‌లో మీ స్వాగతం!",
+    "home_subtitle": "ఆరోగ్యకరమైన పంటలు, మెరుగైన దిగుబడులు - టమాటా రోగాలను ఒక్క క్లిక్‌లో డయాగ్నోస్ చేయండి!",
+    "home_desc": "మీ టమాటా మొక్క యొక్క చిత్రం అప్‌లోడ్ చేయండి, ఆగ్రిగార్డ్ మీరు రోగాలు మరియు చికిత్సల గురించి వివరాలు అందిస్తుంది.",
+    
+    "about_title": "ఆగ్రిగార్డ్ గురించి",
+    "about_desc": "ఆగ్రిగార్డ్ అనేది రైతులు మరియు పరిశోధకులు పంట రోగాలను సమర్థవంతంగా గుర్తించడానికి మరియు నిర్వహించడానికి సహాయపడే ప్రगतిశీల రోగ గుర్తింపు వేదిక. మా వ్యవస్థ AI ఆధారిత విశ్లేషణను ఉపయోగించి టమాటా మొక్కలలో అर्लీ బ్లైట్, లేట్ బ్లైట్, బ్యాక్టీరియల్ స్పాట్ వంటి రోగాలను గుర్తిస్తుంది.",
+    "diseases_title": "మేము గుర్తించే రోగాలు",
+    
+    "early_blight": "అర్లీ బ్లైట్",
+    "early_blight_desc": "కేంద్ర బంగారం ఉన్న ముదురు గాలుల ద్వారా గుర్తించబడుతుంది, ఈ రోగం మొక్కలను బలహీనపరుస్తుంది మరియు ఆకుల పతనం వల్ల పండ్ల ఉత్పత్తి తగ్గిస్తుంది.",
+    
+    "late_blight": "లేట్ బ్లైట్",
+    "late_blight_desc": "త్వరితంగా వ్యాప్తి చెందుతున్న ఫంగల్ రోగం ఇది ఆకులపై ముదురు, నీటితో తడిసిన మచ్చలు ఉత్పత్తి చేస్తుంది.",
+    
+    "bacterial_spot": "బ్యాక్టీరియల్ స్పాట్",
+    "bacterial_spot_desc": "చిన్న, ముదురు, నీటితో తడిసిన మచ్చలు పుట్టుకుంటాయి, ఇవి పచ్చగా మారే ఆకులను, ఆపై ఆఖరి వద్ద ఆకులను పడేస్తాయి.",
+    
+    "upload_title": "చిత్రం అప్‌లోడ్ చేయండి",
+    "upload_desc": "కింద ఇచ్చిన ఎంపికలలో ఒకటి ఉపయోగించి చిత్రం అప్‌లోడ్ చేయండి.",
+    "predict_button": "చిత్రం అప్‌లోడ్ చేయండి",
+    
+    "login_prompt": "దయచేసి",
+    "or": "లేదా",
+    
+    "result_title": "పరిశీలన ఫలితం",
+    
+    "nav_home": "హోమ్",
+    "nav_about": "గురించి",
+    "nav_upload": "చిత్రం అప్‌లోడ్ చేయండి",
+    "nav_register": "రిజిస్టర్",
+    "nav_login": "లాగిన్",
+    "nav_logout": "లాగ్‌అవుట్"
+  },
+
+  "gu": {
+    "home_title": "એગ્રીગાર્ડમાં તમારું સ્વાગત છે!",
+    "home_subtitle": "સ્વસ્થ પાક, શ્રેષ્ઠ ઉત્પાદન - ટમાટર રોગોને એક ક્લિકમાં ઓળખો!",
+    "home_desc": "સરળ રીતે તમારા ટમાટર છોડનો ચિત્ર અપલોડ કરો અને એગ્રીગાર્ડ તમને સંભવિત રોગો અને ઉપચારોથી વિઝાર આપશે.",
+    
+    "about_title": "એગ્રીગાર્ડ વિશે",
+    "about_desc": "એગ્રીગાર્ડ એ એક પ્રगतिशીલ પાક રોગ ઓળખાણ પ્લેટફોર્મ છે જે ખેડુતો અને સંશોધકોને પાક રોગો સઘન રીતે ઓળખવા અને મેનેજ કરવા માટે મદદ કરે છે. અમારી સિસ્ટમ એ.આઇ.-આધારિત વિશ્લેષણનો ઉપયોગ કરીને ટમાટર છોડોમાં અર્લી બ્લાઇટ, લેટ બ્લાઇટ અને બેક્ટેરિયલ સ્પોટ જેવા રોગોની ઓળખ કરે છે.",
+    "diseases_title": "અમે જે રોગો ઓળખીએ છીએ",
+    
+    "early_blight": "અર્લી બ્લાઇટ",
+    "early_blight_desc": "કેન્દ્રબિંદુ સાથે સફેદ દાઝોથી ઓળખાય છે, આ રોગ છોડોને દુર્બળ બનાવે છે અને પાંદડાની ગિરીને કારણે ફળ ઉત્પાદન ઘટાડે છે.",
+    
+    "late_blight": "લેટ બ્લાઇટ",
+    "late_blight_desc": "એક ઝડપથી ફેલાવતી ફંગલ બીમારી છે જે પાંદડાઓ પર ઘેરા, પાણી જેવા ધબ્બા બનાવે છે.",
+    
+    "bacterial_spot": "બેક્ટેરિયલ સ્પોટ",
+    "bacterial_spot_desc": "નાના, ઘેરા પાણી જેવા ધબ્બા બનાવે છે જે પાંદડા પીલાં પાડે છે અને અંતે પાંદડાની ગિરવણી થાય છે.",
+    
+    "upload_title": "છબી અપલોડ કરો",
+    "upload_desc": "નીચે આપેલા વિકલ્પોમાંથી એક પસંદ કરીને છબી અપલોડ કરો.",
+    "predict_button": "છબી અપલોડ કરો",
+    
+    "login_prompt": "કૃપા કરીને",
+    "or": "અથવા",
+    
+    "result_title": "ખોળનાનું પરિણામ",
+    
+    "nav_home": "ઘર",
+    "nav_about": "વિશે",
+    "nav_upload": "છબી અપલોડ કરો",
+    "nav_register": "રજિસ્ટર",
+    "nav_login": "લોગિન",
+    "nav_logout": "લોગઆઉટ"
+  }
+
+}

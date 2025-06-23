@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Agriguard - Tomato Disease Detection</title>
+
+    <!--add /static for call static file-->
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <form method="POST" action="">
+
+        {% csrf_token %}
+        {{ form.as_p }}
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo">Agriguard</h1>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+
+    <li><a href="#home">Home</a></li>
+   <li> <a href="#about">About</a></li>
+   <li> <a href="#upload">Upload Image</a></li>
+  
+{% if user.is_authenticated %}
+    <!--  <li><a href="{% url 'login' %}">Login</a></li> -->
+    {% else %}
+ <li>  <a href="{% url 'register' %}">Register</a></li>
+          <li>  <a href="{% url 'logoin' %}">Login</a></li>
+    {% endif %}
+    </ul>
+    </nav>
+
+    <!-- Sidebar for Mobile -->
+    <div class="sidebar" id="sidebar">
+        <div class="close-btn" onclick="toggleMenu()">✖</div>
+        <ul>
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#upload" onclick="toggleMenu()">Upload Image</a></li>
+            <li><a href="/login.html/" onclick="toggleMenu()">Login</a></li>
+        </ul>
+    </div>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="container">
+            <div class="content">
+                <h1>Welcome to Agriguard!</h1>
+                <h3>Healthy Crops, Better Yields – Diagnose Tomato Diseases in a Click!</h3>
+                <p>Simply upload an image of your tomato plant, and let Agriguard provide you with insights on possible diseases and remedies.</p>
+            </div>
+
+            <!--add static for call images-->
+            <div class="image-container">
+                <img src="/static/download (1).jpeg" alt="Tomato Plant">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container1">
+            <h1>ABOUT AGRIGUARD</h1>
+            <p class="plant">Agriguard is an advanced crop disease detection platform designed to help farmers and researchers identify and manage plant diseases efficiently. Our system utilizes AI-powered analysis to detect diseases like Early Blight, Late Blight, and Bacterial Blight in tomato plants.</p>
+            <h2>Diseases We Detect</h2>
+            <br>
+            <div class="card">
+                <div class="box">
+
+                <!--add static for call imag-->
+                    <img src="/static/earlyb.jpeg" alt="Early Blight">
+                    <div class="box-content">
+                        <h3>Early Blight</h3>
+                        <p>Identified by brown spots with concentric rings, this disease weakens plants by causing premature leaf drop, reducing fruit production.</p>
+                    </div>
+                </div>
+                <div class="box">
+
+                <!--add static for call imag-->
+                    <img src="/static/lateb.jpeg" alt="Late Blight">
+                    <div class="box-content">
+                        <h3>Late Blight</h3>
+                        <p>A fast-spreading fungal disease that creates dark, water-soaked lesions on leaves. It thrives in wet conditions and can quickly destroy entire crops if left untreated.</p>
+                    </div>
+                </div>
+                <div class="box">
+
+                <!--add static for call image-->
+                    <img src="/static/powdery.jpeg" alt="Bacterial Spot">
+                    <div class="box-content">
+                        <h3>Bacterial Spot</h3>
+                        <p>Causes small, dark, water-soaked spots that lead to yellowing and eventual leaf drop, making plants more vulnerable to environmental stress.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- New How It Works Section -->
+            <h2>How It Works</h2>
+            <div class="how-it-works">
+                <div class="step">
+                    <h3>Step 1: Upload Image</h3>
+                    <p>Click a photo or select one from your gallery to analyze the tomato plant.</p>
+                </div>
+                <div class="step">
+                    <h3>Step 2: AI Analysis</h3>
+                    <p>Our AI scans the image and detects if the plant has a disease.</p>
+                </div>
+                <div class="step">
+                    <h3>Step 3: Get Results</h3>
+                    <p>Receive instant results with disease details and treatment suggestions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Upload Section -->
+    <section id="upload">
+        <div class="container2">
+            <h2 class="upload-title">UPLOAD IMAGE</h2>
+            <p class="upload-content">Choose an option below to upload an image.</p>
+
+            <input type="file" id="cameraInput" accept="image/*" capture="environment" style="display: none;">
+            <input type="file" id="galleryInput" accept="image/*" style="display: none;">
+
+            <div class="upload-buttons">
+                <button class="upload-btn" onclick="document.getElementById('cameraInput').click()">
+                    <i class="fas fa-camera"></i> Click Photo
+                </button>
+                <button class="upload-btn" onclick="document.getElementById('galleryInput').click()">
+                    <i class="fas fa-image"></i> Choose from Gallery
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detection Result Section -->
+    <section id="result" style="display: none; text-align: center; padding: 50px;">
+        <h2>Detection Result</h2>
+        <p id="diseaseResult">Processing...</p>
+    </section>
+
+        <script src="script.js"></script>
+
+   </form>
+</body>
+</html>
